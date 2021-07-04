@@ -1,0 +1,724 @@
+/*
+----------
+Global 
+----------
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*
+-------------
+Start Nav Bar
+-------------
+*/
+
+nav
+{
+    margin: 20px 0;
+    width: 100%;
+
+}
+
+nav .logo
+{
+    width: 30%;
+    display: inline-block;
+
+}
+
+nav .logo img
+{
+    cursor: pointer;
+}
+
+nav .links
+{
+    width: 65%;
+    display: inline-block;
+}
+
+nav .links li
+{
+    display: inline-block;
+    margin-right: 5%;
+    color: #373737;
+    cursor: pointer;
+}
+
+nav .links li:hover
+{
+    color: #717cff;
+}
+
+nav .links li.active
+{
+    color: #717cff;
+}
+
+nav .links li button
+{
+    background: none;
+    border: 1px solid #717cff;
+    padding: 3px 25px;
+    border-radius: 11px;
+    color: #505050;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+nav .links li button:hover
+{
+    background-color: #717cff;
+    color: #fff;
+}
+
+/*
+-------------
+End Nav Bar
+-------------
+*/
+
+/*
+-------------
+Start Header
+-------------
+*/
+
+header
+{
+
+}
+
+header h1
+{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #2f2f2f;
+    font-family: "Metropolis-Black";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 68px;
+}
+
+header h1 span
+{
+    color: #717cff;
+}
+
+header p
+{
+    color: #7d7d7d;
+    font-family: "Metropolis-Medium";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+header button
+{
+    border: 0;
+    background: #717cff;
+    padding: 12px 50px;
+    border-radius: 11px;
+    color: #fff;
+    font-family: "Metropolis-Medium";
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+header .icons i
+{
+    margin: 20px 10px 20px 0;
+    cursor: pointer;
+}
+
+header .imgs 
+{
+    position: relative;
+}
+
+header .imgs img:first-of-type
+{
+    width: 470px;
+    height: 565px;
+    z-index: 5;
+}
+
+/* header .imgs img:nth-of-type(2)
+{
+    position: absolute;
+    top: 250px;
+    left: 32px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+} */
+
+/*
+-------------
+End Nav Bar
+-------------
+*/
+
+/*
+-------------
+Start Featured Universities
+-------------
+*/
+
+.featured
+{
+    padding: 40px 0;
+    background-color: #fafafa;
+}
+
+.featured h5
+{
+    opacity: 0.73;
+    color: #373737;
+    font-family: "Metropolis-Medium";
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    margin-bottom: 80px;
+}
+/*
+-------------
+End Featured Universities
+-------------
+*/
+
+/*
+-------------
+Start Our Services
+-------------
+*/
+
+.our-services
+{
+    padding: 80px 0;
+}
+
+.our-services .title h2
+{
+    color: #373737;
+    font-family: "Metropolis-Bold";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: -0.4625px;
+}
+
+.our-services .title p
+{
+    color: #7d7d7d;
+    font-family: "Metropolis-Medium";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.our-services .theCard
+{
+    border: solid 2px #ddd;
+    border-radius: 15px;
+    background: #ffffff;
+    margin-top: 40px;
+    box-shadow: 0px 0px 77px rgba(0,0,0,0.06);
+    width: 30.3333333333%;
+    margin-right: 3%;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.our-services .theCard.active,
+.our-services .theCard:hover
+{
+    border: solid 2px #717cff;
+}
+
+.our-services .theCard h3
+{
+    color: #37474f;
+    font-family: "Metropolis-Bold";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37px;
+    text-indent: 10px;
+}
+
+.our-services .theCard p
+{
+    color: rgba(55,71,79,0.72);
+    font-family: "Metropolis-Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.444444px;
+    margin-left: 10px;
+}
+
+.our-services .theCard span
+{
+    color: #717cff;
+    font-family: "Metropolis-Bold";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.439286px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*
+-------------
+End Our Services
+-------------
+*/
+
+/*
+------------------
+Start News Section
+------------------
+*/
+
+.news
+{
+    background-color: #fafafa;
+    padding: 80px 0;
+}
+
+.news .title h2
+{
+    margin-bottom: 2rem;
+    color: #373737;
+    font-family: "Metropolis-Bold";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.news .title p
+{
+    color: #7d7d7d;
+    font-family: "Metropolis-Medium";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.news .theCard
+{
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 6px 42px rgba(0,0,0,0.1);
+    padding-right: 0;
+    padding-left: 0;
+    width: 30.3333333333%;
+    margin-right: 3%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1px solid #ddd;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.news .theCard:hover
+{
+    border: 1px solid #717cff;
+    cursor: pointer;
+}
+
+.news .theCard img
+{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.news .theCard span
+{
+    display: block;
+    margin: 20px 0 20px 20px;
+    color: #565656;
+    font-family: "Metropolis-SemiBold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.news .theCard span i
+{
+    margin-right: 5px;
+}
+
+.news .theCard p
+{
+    margin: 0 0 60px 20px;
+    color: #252525;
+    font-family: "Metropolis-Bold";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.news button
+{
+    border: 1px solid #ddd;
+    background: transparent;
+    display: block;
+    margin: auto;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: #717cff;
+    color: #fff;
+}
+
+/*
+------------------
+End News Section
+------------------
+*/
+
+/*
+------------------
+Start upComing Section
+------------------
+*/
+
+.upcoming
+{
+    padding: 40px 0;
+}
+
+.upcoming .title h2
+{
+    color: #373737;
+    font-family: "Metropolis-Bold";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.upcoming .title p
+{
+    color: #7d7d7d;
+    font-family: "Metropolis-Medium";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.upcoming .slider .card
+{
+    padding: 40px;
+}
+
+.upcoming .slider .card h2
+{
+    margin-left: 10px;
+    color: #37474f;
+    font-family: "Metropolis-Bold";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37px;
+    margin-top: 10px
+}
+
+.upcoming .slider .card p
+{
+    margin-left: 10px;
+    color: rgba(55,71,79,0.72);
+    font-family: "Metropolis-Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.upcoming .slider .card > span
+{
+    margin-left: 10px;
+    color: #717cff;
+    font-family: "Metropolis-Bold";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.upcoming .slider .card span i
+{
+    margin-left: 10px;
+}
+
+/* Changes In Slider */
+.upcoming .bx-wrapper{box-shadow: none;background: none;margin-bottom: 90px;}
+.upcoming .bx-viewport {height: 300px;}
+
+
+/*
+------------------
+end upComing Section
+------------------
+*/
+
+/*
+------------------
+start Country Section
+------------------
+*/
+
+.country
+{
+    padding: 40px 0;
+}
+
+.country .title h2
+{
+    color: #373737;
+    font-family: "Metropolis-Bold";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.country .title p
+{
+    color: #7d7d7d;
+    font-family: "Metropolis-Medium";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 60px;
+}
+
+.country .slider .card
+{
+    border: 0;
+}
+
+.country .slider .card img
+{
+    border-radius: 15px;
+}
+
+.country .slider .card h5
+{
+    margin: 10px 0 0 10px;
+    color: #37474f;
+    font-family: "Metropolis-Bold";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37px;
+}
+
+.country .slider .card p
+{
+    margin-left: 10px;
+    color: rgba(55,71,79,0.72);
+    font-family: "Metropolis-Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Changes In Slider */
+.country .bx-wrapper{box-shadow: none;background: none;margin-bottom: 90px;}
+.country .bx-viewport {height: 300px;}
+
+
+/*
+------------------
+end Country Section
+------------------
+*/
+
+
+/*
+------------------
+start Testimoinals Section
+------------------
+*/
+
+.testimonials
+{
+    padding: 40px 0;
+}
+
+.testimonials .title h2
+{
+    color: #373737;
+    font-family: "Metropolis-Bold";
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.testimonials .title p
+{
+    color: #7d7d7d;
+    font-family: "Metropolis-Medium";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 80px;
+}
+
+.testimonials .slider .card
+{
+    border: 0;
+    display: inline-block;
+    box-shadow: 0px 0px 77px rgba(0,0,0,0.06);
+}
+
+.testimonials .slider .card .info img
+{
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    margin: 0 0 20px 10px;
+    display: inline-block;
+}
+
+.testimonials .slider .card .info h5
+{
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: #37474f;
+    font-family: "Metropolis-Bold";
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.testimonials .slider .card .info span
+{
+    color: #999;
+    font-family: "Metropolis-Medium";
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+.testimonials .slider .card p
+{
+    margin-left: 10px;
+    color: rgba(55,71,79,0.72);
+    font-family: "Metropolis-Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Changes In Slider */
+.testimonials .bx-wrapper{box-shadow: none;background: none;margin-bottom: 90px;}
+.testimonials .bx-viewport {height: 300px;}
+
+
+/*
+------------------
+end Testimoinals Section
+------------------
+*/
+
+
+/*
+------------------
+Start Join
+------------------
+*/
+
+.join
+{
+    padding: 40px 0;
+    background-color: #fafafa;
+}
+
+.join button
+{
+    border: 0;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 11px;
+    background: #717cff;
+}
+
+
+/*
+------------------
+end Join
+------------------
+*/
+
+/*
+------------------
+Start Footer
+------------------
+*/
+
+footer
+{
+    padding: 40px 0;
+    background-color: #717cff;
+    color: #fff;
+}
+
+footer img
+{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+footer ul li
+{
+    line-height: 2.4;
+    cursor: pointer;
+}
+
+footer i
+{
+    margin-top: 120px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*
+------------------
+end Footer
+------------------
+*/
+
+
+/* Some Changes In Slider */
+.bx-wrapper .bx-controls-direction a{display: none;}
+.bx-wrapper .bx-pager.bx-default-pager a {background-color: #ddd;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{background-color: #717cff;}
