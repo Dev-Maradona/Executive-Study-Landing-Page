@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
 </head>
 <body>
     
     <!-- Start Nav Bar -->
-    <nav>
+    <nav class="main-nav">
         <div class="container">
             <div class="logo">
                 <img src="images/logo/logo.png" alt="theLogo">
@@ -27,12 +28,29 @@
                 <li>Responsibilites</li>
                 <li>Country</li>
                 <li><button>Apply</button></li>
+                <li id="open-collapse"><i class="fas fa-bars"></i></li>
             </ul>
         </div>
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start Header -->
+    <!-- Nav For Small Screens -->
+    <nav class="sm-nav">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="theLogo">
+            </div>
+            <ul class="links">
+                <li class="active">Home</li>
+                <li>About Us</li>
+                <li>Our Service</li>
+                <li>Responsibilites</li>
+                <li>Country</li>
+                <li><i class="far fa-times-circle" id="close-collapse"></i></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
             <div class="row">
@@ -51,7 +69,7 @@
                 <div class="col-md-6">
                     <div class="imgs">
                         <img src="images/header/main.png" alt="theMainPhoto">
-                        <!-- <img src="images/header/Oval.png" alt="theOval"> -->
+                        <img src="images/header/Oval.png" alt="theOvalPhoto">
                     </div>
                 </div>
             </div>
@@ -482,6 +500,12 @@
     </footer>
 
     <!-- End Footer -->
+
+    <!-- to Up Arrow -->
+    <div class="to-up">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- to Up Arrow -->
 
     <!-- Our Scripts -->
     <script src="js/aos.js"></script>

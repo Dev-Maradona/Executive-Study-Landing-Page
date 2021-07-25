@@ -32,50 +32,71 @@ Start Nav Bar
 -------------
 */
 
-nav
+.main-nav
 {
     margin: 20px 0;
     width: 100%;
 
 }
 
-nav .logo
+.main-nav .logo
 {
     width: 30%;
     display: inline-block;
 
 }
 
-nav .logo img
+.main-nav .logo img
 {
     cursor: pointer;
 }
 
-nav .links
+.main-nav .links
 {
     width: 65%;
     display: inline-block;
 }
 
-nav .links li
+.main-nav .links li
 {
     display: inline-block;
     margin-right: 5%;
     color: #373737;
     cursor: pointer;
+    position: relative;
 }
 
-nav .links li:hover
+.main-nav .links li.active::after
+{
+    position: absolute;
+    content: '';
+    background-color: #717cff;
+    top: 25px;
+    left: 0px;
+    width: 20px;
+    height: 2px;
+}
+
+.main-nav .links li:last-of-type
+{
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 30px;
+    font-size: 1.5rem;
+}
+
+.main-nav .links li:hover
 {
     color: #717cff;
 }
 
-nav .links li.active
+.main-nav .links li.active
 {
     color: #717cff;
 }
 
-nav .links li button
+.main-nav .links li button
 {
     background: none;
     border: 1px solid #717cff;
@@ -86,7 +107,7 @@ nav .links li button
     -webkit-transition: all 0.5s ease-in-out;
 }
 
-nav .links li button:hover
+.main-nav .links li button:hover
 {
     background-color: #717cff;
     color: #fff;
@@ -98,16 +119,69 @@ End Nav Bar
 -------------
 */
 
+/* Start Nav For Small Screens */
+
+.sm-nav
+{
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    margin: 20px 0;
+    background-color: #222;
+    height: 460px;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 4;
+    display: none;
+}
+
+.sm-nav .logo
+{
+    width: 30%;
+    display: inline-block;
+}
+
+.sm-nav .logo img
+{
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.sm-nav .links
+{
+    margin-top: 40px;
+    width: 65%;
+    display: inline-block;
+}
+
+.sm-nav .links li
+{
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    margin: 30px 40px 0 0;
+}
+
+.sm-nav .links li:hover
+{
+    color: #717cff;
+}
+
+.sm-nav .links li.active
+{
+    color: #717cff;
+}
+
+/* End Nav For Small Screens */
+
 /*
 -------------
 Start Header
 -------------
 */
-
-header
-{
-
-}
 
 header h1
 {
@@ -165,15 +239,18 @@ header .imgs img:first-of-type
     z-index: 5;
 }
 
-/* header .imgs img:nth-of-type(2)
+header .imgs img:nth-of-type(2)
 {
     position: absolute;
-    top: 250px;
-    left: 32px;
+    height: 433px;
+    top: 139px;
+    left: 230px;
     right: 0;
     bottom: 0;
     z-index: 1;
-} */
+    overflow: hidden;
+    z-index: -1;
+}
 
 /*
 -------------
@@ -482,6 +559,9 @@ Start upComing Section
 /* Changes In Slider */
 .upcoming .bx-wrapper{box-shadow: none;background: none;margin-bottom: 90px;}
 .upcoming .bx-viewport {height: 300px;}
+div.bx-clone + .row {width: 1130px !important;}
+div.bx-clone + .row + .row {width: 1130px !important;}
+div.bx-clone + .row + .row + .row {width: 1130px !important;}
 
 
 /*
@@ -716,6 +796,29 @@ end Footer
 ------------------
 */
 
+/* To Up Arrow */
+
+.to-up
+{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    color: #555;
+    background-color: #ddd;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+.to-up:hover
+{
+    background-color: rgb(121, 120, 120);
+    color: #fff;
+}
+
+/* To Up Arrow */
 
 /* Some Changes In Slider */
 .bx-wrapper .bx-controls-direction a{display: none;}

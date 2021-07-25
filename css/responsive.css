@@ -1,0 +1,74 @@
+/*
+---------------------------------------
+Fix Some Problems in Responsive Desgin
+---------------------------------------
+*/
+
+/* Smart Phone And Tablet */
+@media (max-width:768px)
+{
+    body {
+        overflow-x: hidden;
+    }
+    .main-nav .links li {
+        display: none;
+    }
+    .main-nav .links li:last-of-type {
+        display: block;
+    }
+}
+
+/* Small Screen */
+@media (min-width:768px) and (max-width:795px)
+{
+    body {
+        overflow-x: hidden;
+    }
+    .main-nav .links li {
+        display: none;
+    }
+    .main-nav .links li:last-of-type {
+        display: block;
+    }
+}
+
+@media (min-width:795px) and (max-width:990px)
+{
+    body {
+        overflow-x: hidden;
+    }
+    .main-nav .links li {
+        display: none;
+    }
+    .main-nav .links li:last-of-type {
+        display: block;
+    }
+}
+
+/* Medium Screen */
+@media (min-width:991px) and (max-width:1199px)
+{
+    body {
+        overflow-x: hidden;
+    }
+    .main-nav .links li button {
+        padding: 3px 4px;
+    }
+}
+
+/* Large Screen */
+@media (min-width:1200px)
+{
+    body {
+        overflow-x: hidden;
+    }
+    .main-nav .links li:last-of-type {
+        display: none !important;
+    }
+}
+
+/*
+---------------------------------------
+Fix Some Problems in Responsive Desgin
+---------------------------------------
+*/
